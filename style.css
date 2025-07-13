@@ -1,0 +1,209 @@
+   :root {
+     font-size: 10px;
+     --main-color: #d3ad7f;
+     --black: #131313;
+     --bg: #010103
+   }
+
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
+
+     text-decoration: none;
+   }
+
+   .caixa-video {
+     position: fixed;
+     z-index: -1;
+     width: 100%;
+     height: 100%;
+   }
+
+   .caixa-video video {
+     min-height: 100%;
+     min-width: 100%;
+     position: fixed;
+     top: 0;
+   }
+
+   .mascara-1 {
+     height: 100%;
+     width: 100%;
+     position: fixed;
+     top: 0;
+     background: linear-gradient(109deg, rgba(13, 12, 16, 0.93) 15%, rgba(10, 12, 16, 0.8) 50%, rgba(10, 12, 16, 0.90) 85%);
+   }
+
+   section {
+     max-width: 1200px;
+     padding: 4rem 2rem;
+     margin: 0 auto;
+   }
+
+   .header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 2;
+     background-color: var(--bg);
+     border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+     width: 100vw;
+
+   }
+
+   .header section {
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 45px;
+     padding: 1.5rem 0;
+     position: relative;
+   }
+
+   .header section a img {
+     height: 6rem;
+   }
+
+   .header section nav a {
+     margin: 0 1rem;
+     font-size: 1.6rem;
+     color: white;
+     transition: .3s linear;
+
+   }
+
+   .header section nav a:hover {
+     color: var(--main-color);
+     border-bottom: 0.1rem solid var(--main-color);
+     padding-bottom: 0.5rem;
+     letter-spacing: .1rem;
+
+   }
+
+   .caixa-principal {
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+   }
+
+   .caixa-principal div {
+     max-width: 60rem;
+   }
+
+   .caixa-principal div h3 {
+     color: #f5f2ee;
+     font-size: 6rem;
+     text-transform: uppercase;
+   }
+
+   .caixa-principal div p {
+     font-size: 2rem;
+     color: azure;
+     font-weight: lighter;
+     padding: 1rem 0;
+     line-height: 1.8;
+   }
+
+    .link-button {
+     background-color: var(--main-color);
+     cursor: pointer;
+     display: inline-block;
+     margin-top: 1rem;
+     font-size: 1.7rem;
+     color: rgb(0, 54, 107);
+     padding: 1rem 3rem;
+     transition: .2s linear;
+     border-radius: 3px;
+     border: none;
+     font-size: 1.8rem;
+   }
+
+     .link-button:hover {
+     background-color: #9f7b50;
+     letter-spacing: 0.06rem;
+
+   }
+
+    .link-button:active {
+     background-color: #875c26;
+   }
+   .titulo{
+     text-align: center;
+     color: #f5f2ee;
+     text-transform: uppercase;
+     padding-bottom: 3.5rem;
+     font-size: 4rem;
+   }
+   .titulo-m {
+     color: #f5f2ee;
+     text-transform: uppercase;
+     padding-bottom: 3.5rem;
+     font-size: 2.9rem;
+          text-align: center;
+
+   }
+   .titulo span, .caixa-sobre .sobre-texto h3 span, .titulo-m span {
+     color: #bc9360;
+   }
+    .caixa-sobre .sobre-container {
+            display: flex;
+       align-items: center;
+       background-color: rgba(1, 26, 19, 0.968);
+       gap: 1.5rem;
+    }
+    .caixa-sobre .sobre-container .sobre-imagem{
+      flex: 1 1 45rem;
+
+    }
+    .caixa-sobre .sobre-container .sobre-imegem img{
+      width: 100%;
+    }
+   .caixa-sobre .sobre-container .sobre-texto{
+      flex: 1 1 45rem;
+      padding: 2rem;
+      position: relative;
+      top: 2rem;
+    }
+     .caixa-sobre .sobre-container .sobre-texto h3{
+      font-size: 3rem;
+      color: aliceblue;
+    }
+     .caixa-sobre .sobre-container .sobre-texto p{
+      font-size: 1.7rem;
+      font-weight: lighter;
+      color: white;
+      line-height: 1.9rem;
+      padding: 1rem 0;
+    }
+    .mascara{
+     visibility: hidden; 
+      z-index: 3;
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(109deg, rgba(10, 12, 16, 0.88) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.70) 85%);
+      gap: 20px;
+      z-index: 4;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+    .modal{
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+      position: fixed;
+      transition: left .8s linear;
+      top: 50%;
+      left: -29%;
+      transform: translate(-50%, -50%);
+    }
+   
+    
+    
+    

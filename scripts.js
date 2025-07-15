@@ -3,8 +3,8 @@
 
    [1ª] saber qendo o usuario clicar no botao 
    [2ª] mudar o posionamento do modal
-   [] fazer a mascara ficar visível
-   [] Quando clicar na mascara, fechar o modals
+   [3ª] fazer a mascara ficar visível
+   [4ª] Quando clicar na mascara, fechar o modals
 
     */
 
@@ -16,6 +16,6 @@
       mascara.style.visibility = 'visible'
     }
     function esconderModal(){
-       modal.style.left = '-30%'
+       modal.style.left = '-29%'
       mascara.style.visibility = 'hidden'
     }

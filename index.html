@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Projeto Cafeteria</title>
+</head>
+
+<body>
+  <div class="caixa-video">
+    <video src="video/video-cafe.mp4" loop muted autoplay></video>
+    <div class="mascara-1"></div>
+  </div>
+
+  <header class="header">
+    <section>
+      <a href="https://wecoffee.com.br/">
+        <img src="img/logo.png" alt="logo-da Cafeteria">
+      </a>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#" onclick="mostrarModal()">Endereço</a>
+      </nav>
+    </section>
+  </header>
+
+  <section class="caixa-principal">
+    <div>
+      <h3> Code com o Melhor cafê da Região</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, temporibus minus. Eaque architecto molestiae?
+        Deleniti autem voluptates quasi. Accusamus similique ullam molestiae ipsam!</p>
+      <a class="link-button"> Pegue o seu Agora</a>
+    </div>
+  </section>
+
+  <section class="caixa-sobre">
+    <h2 class="titulo"> <span>Sobre</span> Nós</h2>
+    <div class="sobre-container">
+      <div class="sobre-imagem">
+        <img src="img/about-img.jpg" alt="about-img">
+      </div>
+
+      <div class="sobre-texto">
+        <h3> o que faz nosso cafê especial</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde minus voluptas corporis? Aliquam placeat porro
+          repellat fuga aliquid ullam dolor officia, aut incidunt veritatis vel et quasi ipsam facere magnam.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde minus voluptas corporis? Aliquam placeat porro
+          repellat fuga aliquid ullam dolor officia, aut incidunt veritatis vel et quasi ipsam facere magnam
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nobis beatae provident, nam incidunt dolorem
+          quaerat obcaecati non. Nemo quos rem eius sed eum eligendi velit hic cumque facere ipsam!</p>
+        <a class="link-button">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+    <div class="modal">
+   <h3 class="titulo-m"> <span>Nosso</span> Endereço</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31666.190379100342!2d-48.176575980770174!3d-7.20957401480882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92d9094eaf632d1b%3A0x329bce2fe0969167!2sRiacho%20Fundo%20-%20Balne%C3%A1rio!5e0!3m2!1sen!2sbr!4v1752610298318!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="mascara" onclick="esconderModal()"></div>
+</body>
+<script src="scripts.js"></script>
+
+</html>
